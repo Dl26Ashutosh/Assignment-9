@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 8</title>
+</head>
+<body>
+  <script>
+    class Cuboid{
+      constructor(height,width,length)
+      {
+        this.height=height;
+        this.width=width;
+        this.length=length;
+      }
+      surfaceArea()
+      {
+        let s_area = 2*((this.length*this.width) + (this.length * this.height) + (this.width * this.height));
+        return s_area;
+      }
+      volume()
+      {
+        let vol=this.height*this.width*this*length;
+        return vol;
+      }
+    
+    }
+    let c = new Cuboid(4,4,4);
+    console.log("Surface area of cuboid is:"+c.surfaceArea())
+    console.log("volume of cuboid is:"+c.volume());
+
+
+    class Cube extends Cuboid{
+      constructor(side)
+      {
+        super(side,side,side);
+        this.side=side;;
+      }
+      surfaceArea()
+      {
+        s_area=this.side*this.side*this.side;
+        return s_area;
+      }
+      volume(){
+        vol=6*(this.side*this*side);
+        return vol;
+      }
+    }
+    let calCube= new Cube(4);
+    console.log("Surface area of cube is:"+calCube.surfaceArea())
+    console.log("volume of cube is:"+calCube.volume())
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 7</title>
+</head>
+<body>
+  <script>
+    let array = [1,2,3,4,10];
+    let sum =0;
+    let addElement = (array) =>
+    {
+        for(let i=0;i<=array.length;i++) 
+        {
+          if(isNaN(array[i]))
+          {
+            continue;
+          }
+          sum=sum+Number(array[i]);
+        }
+        return sum;
+    }
+    document.write(addElement(array));
+  </script>
+</body>
+</html>

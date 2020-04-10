@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 6</title>
+</head>
+<body>
+  <script>
+    let num=23;
+    let array=[1,2,3,4,5,5,23,2,33];
+    let findElement = (num,array) =>
+    {
+      for(let i=0;i<=array.length;i++)
+      {
+        if(num==array[i])
+        {
+          return i;
+        }
+     }
+   }
+    document.write("Index is:"+findElement(num,array));
+  </script>
+</body>
+</html>
